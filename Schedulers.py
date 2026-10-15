@@ -13,9 +13,9 @@ IDLE = "IDLE"
 
 ALGORITMOS = [
     "FCFS",
-    "SJF",
-    "SRTF",
-    "RR",
+    "SJF (no apropiativo)",
+    "SRTF (SJF apropiativo)",
+    "Round Robin",
     "Prioridad (no apropiativo)",
     "Prioridad (apropiativo)"
 ]
@@ -153,9 +153,9 @@ def ejecutar(nombre, procesos, quantum = None):
 
     if nombre == "FCFS":
         return fcfs(procesos)
-    elif nombre == "SJF":
+    elif nombre == "SJF (no apropiativo)":
         return sjf(procesos, apropiativo=False)
-    elif nombre == "SRTF":
+    elif nombre == "SRTF (SJF apropiativo)":
         return sjf(procesos, apropiativo=True)
     elif nombre == "Round Robin":
         if quantum is None:
