@@ -16,13 +16,25 @@ archivo que es de suma importancia para la interfaz de usuario, se tratara de un
 ### 4) Models:
 archivo que se encargara del programa en la parte del PCB (Process Control Block), en este se establece las multimples caracteristicas del proceso que quiere ingresar el usuario, es decir, que aqui se encuentra la lógica de los datos de entrada del usuario para que pueda ejecutarlos el programa.
 
+## 5) Test:
+archivo que contiene 10 pruebas que comparan la salida de los algoritmos con resultados calculados a mano, la mayoría con el ejemplo clásico P1(0,8), P2(1,4), P3(2,9), P4(3,5). No usan librerías externas ni abren la interfaz.
+
+## 6) Main:
+archivo principal del programa, es el punto de partida del programa.
+
+
+
 ## Estructura del Proyecto
 
 ```text
-└── Proyecto Final Sistemas Operativos/ # Carpeta que almacena los archivos realizados en Python 
-    ├── Gui.py              # Interfaz de usuario hecho en tkinter
-    ├── Metrics.py          # Métricas de los algortimos de planificacion
-    ├── Models.py           # Modelo del PCB
-    ├── README.md           # Documentación acerca del programa (Donde estas leyendo esto actualmente)
-    └── Schedulers.py       # Lógica de los algoritmo s de planificación (Schedulers)
+└── Proyecto Final Sistemas Operativos/ # Carpeta que almacena los archivos realizados en Python
+    ├── dist                    # Carpeta donde se encuentra el programa .exe
+        └── Schedulers App.exe  # App del Planificador de procesos (Solo hacer doble click para utilizarla)
+    ├── Gui.py                  # Interfaz de usuario hecho en tkinter
+    ├── Main.py                 # Archivo Principal donde arranca todo el programa
+    ├── Metrics.py              # Métricas de los algortimos de planificacion
+    ├── Models.py               # Modelo del PCB
+    ├── README.md               # Documentación acerca del programa (Donde estas leyendo esto actualmente)
+    ├── Schedulers.py           # Lógica de los algoritmos de planificación (Schedulers)
+    └── Test.py                 # 10 Pruebas que comparar la salida de los algoritmos
 ```
