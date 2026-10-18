@@ -28,8 +28,6 @@ archivo principal del programa, es el punto de partida del programa.
 
 ```text
 └── Proyecto Final Sistemas Operativos/ # Carpeta que almacena los archivos realizados en Python
-    ├── dist                    # Carpeta donde se encuentra el programa .exe
-        └── Schedulers App.exe  # App del Planificador de procesos (Solo hacer doble click para utilizarla)
     ├── Gui.py                  # Interfaz de usuario hecho en tkinter
     ├── Main.py                 # Archivo Principal donde arranca todo el programa
     ├── Metrics.py              # Métricas de los algortimos de planificacion
